@@ -51,7 +51,6 @@ export default function () {
 
 	function getCountries(userQuery) {
 		fetchCountries(userQuery).then((countries) => {
-			console.log(countries[0]);
 			if (countries.length > 10) {
 				showInfoNotification();
 				cleanCountriesMarkup();
